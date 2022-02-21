@@ -60,14 +60,13 @@
                 <scope>import</scope>
             </dependency>
 
-            <!--nacos的管理依赖-->
+            <!-- nacos客户端 -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>2.2.7.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>2021.1</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 

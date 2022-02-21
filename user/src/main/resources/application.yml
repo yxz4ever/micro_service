@@ -2,3 +2,11 @@ server:
     port: 8090
     servlet:
         context-path: /user
+spring:
+    cloud:
+        nacos:
+            # nacos 服务注册地址
+            server-addr: 192.168.237.132:9090
+    application:
+        # 服务的名字
+        name: user-service
