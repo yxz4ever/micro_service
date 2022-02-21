@@ -1,0 +1,15 @@
+server:
+    # 项目端口号
+    port: 8081
+    servlet:
+        # 项目上下文，要接到url后面
+        context-path: /test
+
+spring:
+    application:
+        #项目名称
+        name: test
+    profiles:
+        #配置多个不同的profile，实现在不同的环境（比如开发、测试和生产环境）使用不同的配置变量。
+        # 环境变量配置，高于此文件
+        active: dev
