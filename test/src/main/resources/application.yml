@@ -18,6 +18,8 @@ spring:
         nacos:
             # nacos 服务端地址
             server-addr: 192.168.237.132:9090
+            discovery:
+                cluster-name: BJ
 
 feign:
     httpclient:
