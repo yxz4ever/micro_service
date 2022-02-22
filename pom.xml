@@ -67,6 +67,7 @@
                 <version>2021.1</version>
             </dependency>
 
+            <!-- 数据库三大件 start -->
             <!-- mysql连接依赖 -->
             <dependency>
                 <groupId>mysql</groupId>
@@ -87,6 +88,23 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>1.2.8</version>
             </dependency>
+            <!-- 数据库三大件 end -->
+
+            <!--   nacos 发现服务组件 start  -->
+            <!-- feign 客户端依赖 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>3.1.1</version>
+            </dependency>
+
+            <!-- loadbalancer 依赖 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+                <version>3.1.1</version>
+            </dependency>
+            <!--   nacos 发现服务组件 end  -->
 
         </dependencies>
     </dependencyManagement>
