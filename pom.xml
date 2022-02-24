@@ -7,6 +7,7 @@
     <modules>
         <module>test</module>
         <module>user</module>
+        <module>gateway</module>
     </modules>
     <properties>
         <!-- 统一字符集编码 -->
@@ -24,17 +25,10 @@
         <groupId>org.springframework.boot</groupId>
         <version>2.6.3</version>
         <!-- 放弃本地仓库查找 -->
-        <relativePath/>
+        <!--<relativePath/>-->
     </parent>
 
     <dependencies>
-        <!-- springboot web -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.6.3</version>
-        </dependency>
-
         <!-- 单元测试 -->
         <dependency>
             <groupId>junit</groupId>
@@ -106,6 +100,12 @@
             </dependency>
             <!--   nacos 发现服务组件 end  -->
 
+            <!-- gateway 网关 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway</artifactId>
+                <version>3.1.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
