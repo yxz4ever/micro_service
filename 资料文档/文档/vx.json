@@ -11,6 +11,9 @@
     },
     {
       "name": "gateway"
+    },
+    {
+      "name": "amqp"
     }
   ],
   "id": "4",
