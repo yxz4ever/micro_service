@@ -12,11 +12,11 @@ public class PublisherController {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    @RequestMapping("/send")
-    public String send() {
-        String queueName = "simple.queue";
-        String message   = "hello" + System.currentTimeMillis();
-        rabbitTemplate.convertAndSend(queueName, message);
-        return "发送成功";
-    }
+    // @RequestMapping("/send")
+    // public String send() {
+    //     String queueName = "simple.queue";
+    //     String message   = "hello" + System.currentTimeMillis();
+    //     rabbitTemplate.convertAndSend(queueName, message);
+    //     return "发送成功";
+    // }
 }

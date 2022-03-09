@@ -8,3 +8,6 @@ spring:
         username: luo
         password: 123123
         virtual-host: /
+        listener:
+            simple:
+                prefetch: 1 # 预读上限
